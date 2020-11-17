@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "页面a",
+  "navigationTextStyle": "#67C23A",
+  "navigationBackgroundColor": "#E6A23C",
+  "usingComponents": {},
+  "enablePullDownRefresh":true,
+  "backgroundColor":"#F56C6C",
+  "backgroundTextStyle":"light",
+  "onReachBottomDistance":50
+}

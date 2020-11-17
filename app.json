@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demoa/demoa"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0055cc",
+    "navigationBarTitleText": "头部标题",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "debugger":true,
+  "plugin":[],
+  "tabBar":[],
+  "networkTimeout":60000
+}
