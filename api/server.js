@@ -7,5 +7,5 @@ app.post('/', (req, res) => {
     res.json(req.body);
 });
 app.listen(3000, () => {
-    console.log('server running at http://127.0.0.1:3000');
+    console.log('server running at http://localhost:3000');
 });

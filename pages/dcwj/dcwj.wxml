@@ -1,5 +1,5 @@
 <view class='bordermargin'>
-    <form bindreset="submit">
+    <form bindsubmit="submit">
         <view>
             <text>姓名：</text>
             <input name='name' value="张三" />
