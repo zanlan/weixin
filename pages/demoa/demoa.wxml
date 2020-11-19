@@ -1,6 +1,34 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log" wx:key="index"> 
+<!-- logs.wxml -->
+<view>
+  <view class="bordermargin">
+    <input type="number" bindchange="num1change" />
+    <input type="number" bindchange="num2change" />
+    <view>{{result}}</view>
+    <button bindtap='compare'>比较你输入的数字</button>
+  </view>
+  <view class="bordermargin">
+    <input id='num3' type="number" bindchange="change1" />
+    <input id='num4' type="number" bindchange="change1" />
+  </view>
+  <view class="bordermargin">
+    <input data-id='num5' type="number" bindchange="change2" />
+    <input data-id='num6' type="number" bindchange="change2" />
+  </view>
+  <view class="bordermargin">
+    <button bindtap='changeStatus'>改变status值</button>
+    <text wx:if='{{status==0}}'>status==0</text>
+    <text wx:elif='{{status==1}}'>status==1</text>
+    <text wx:else='{{status==2}}'>status==2</text>
+  </view>
+  <view class="bordermargin">
+    <form bindsubmit="formCompare">
+      <input name='num7' type="number" />
+      <input name='num8' type="number" />
+      <button form-type="submit">比较</button>
+    </form>
+    <view>比较结果：{{formresult}}</view>
+  </view>
+  <view wx:for="{{logs}}" wx:for-item="log" wx:key="index">
     <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+  </view>
 </view>

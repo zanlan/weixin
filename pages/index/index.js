@@ -9,6 +9,15 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  outerTap:function(e){
+    console.log(e)
+  },
+  middleTap:function(e){
+    console.log(e)
+  },
+  innerTap:function(e){
+    console.log(e)
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

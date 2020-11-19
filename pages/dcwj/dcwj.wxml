@@ -1,0 +1,47 @@
+<view class='bordermargin'>
+    <form bindreset="submit">
+        <view>
+            <text>姓名：</text>
+            <input name='name' value="张三" />
+        </view>
+        <view>
+            <text>性别：</text>
+            <radio-group name='gender'>
+                <label>
+                    <radio value="0" checked="{{true}}" />
+                    男
+                </label>
+                <label>
+                    <radio value="0" />
+                    女
+                </label>
+            </radio-group>
+        </view>
+        <view>
+            <text>专业技能：</text>
+            <checkbox-group name='skills'>
+                <label>
+                    <checkbox value="html" checked="{{true}}" />
+                    HTML
+                </label>
+                <label>
+                    <checkbox value="css" checked="{{true}}" />
+                    Css
+                </label>
+                <label>
+                    <checkbox value="js" />
+                    JavaScript
+                </label>
+                <label>
+                    <checkbox value="ps" />
+                    Photoshop
+                </label>
+            </checkbox-group>
+        </view>
+        <view>
+            <text>您的意见：</text>
+            <textarea name="opinion" value="测试"></textarea>
+        </view>
+        <button form-type="submit">提交</button>
+    </form>
+</view>
